@@ -18,36 +18,40 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a software engineer who builds products end to end, from
+              the interface people use to the data underneath it.
               <br />
-              <br />I am fluent in classics like
+              <br />I work mostly in
               <i>
-                <b className="purple"> C++ and Javascript .</b>
+                <b className="purple"> TypeScript and Python</b>
               </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+              , with
               <i>
-                <b className="purple">Web Technologies and Products </b> 
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+                <b className="purple"> React and Next.js</b>
+              </i>{" "}
+              on the frontend and
+              <i>
+                <b className="purple"> FastAPI and Node.js</b>
+              </i>{" "}
+              on the backend.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I've built real-time analytics dashboards,
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
+                <b className="purple"> OAuth integrations</b>
+              </i>{" "}
+              and
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple"> ETL pipelines</b>
+              </i>{" "}
+              with PostgreSQL, ClickHouse and Airflow.
+              <br />
+              <br />
+              Lately I'm most excited about
+              <i>
+                <b className="purple"> AI agents and LLM-powered workflows</b>
+              </i>{" "}
+              built with LangGraph, LangChain and MCP.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

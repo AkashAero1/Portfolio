@@ -9,16 +9,21 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Ritu Sharma </span>
-            from <span className="purple"> Gujarat, India.</span>
+            from <span className="purple"> India</span>.
             <br />
-            I am currently in 3rd year of college, pursuing CE from GEC-Rajkot.
+            I'm a software engineer with experience building full-stack
+            products, data pipelines and AI-powered features. I hold a
+            B.E. in Computer Engineering from GEC Rajkot.
             <br />
-            I love problem-solving and developing new things.<br></br>
-            Designated as GDSC Lead of my college for the year 2023-24.
             <br />
-            Specialist on Codeforces.  <a href="https://codeforces.com/profile/Ritu_1149" alt="error" >Codeforces</a>
+            I love problem-solving: I'm a{" "}
+            <a href="https://leetcode.com/u/Ritu84/" target="_blank" rel="noreferrer">
+              LeetCode Knight
+            </a>{" "}
+            with 700+ problems solved, 3-star on CodeChef, and I led my
+            college's Google Developer Student Club in 2023.
             <br />
-            GfG Institute Rank 1, solved over 500+ questions on this platform.<br/>
+            <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
