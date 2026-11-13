@@ -27,7 +27,7 @@ function Projects() {
               imgPath={LedgerLine}
               isBlog={false}
               title="LedgerLine"
-              description="An LLM invoice processing pipeline made safe to pay from: the model extracts fields, deterministic code makes every decision. Adds prompt-injection defenses, PII masking and retry-safe server-side approvals. An LLM evaluation exposed a leaky 94% accuracy claim, and the fixes cut missed fraud/duplicate reviews from 7/13 to 0/13 at Rs. 0.09 per document, with a regression test for every fix. Built with Python, FastAPI, Gemini, React and TypeScript."
+              description="An LLM invoice processing pipeline made safe to pay from: the model extracts fields, deterministic code makes every decision. Adds prompt-injection defenses, bank-account masking before LLM calls and retry-safe server-side approvals. An LLM evaluation exposed a leaky 94% accuracy claim, and the fixes cut missed fraud/duplicate reviews from 7/13 to 0/13 at Rs. 0.09 per document, with a regression test for every fix. Built with Python, FastAPI, Gemini, React and TypeScript."
               ghLink="https://github.com/Ritu84/ledgerline"
             />
           </Col>
