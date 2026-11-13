@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
+import LedgerLine from "../../Assets/Projects/LedgerLine.png"
 import PharmaScope from "../../Assets/Projects/PharmaScope.png"
 import Blog from "../../Assets/Projects/Blog.png"
 import Appoint from "../../Assets/Projects/Appoint.png"
@@ -18,15 +19,25 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          AI systems and full-stack products I've built recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LedgerLine}
+              isBlog={false}
+              title="LedgerLine"
+              description="An LLM invoice processing pipeline made safe to pay from: the model extracts fields, deterministic code makes every decision. Adds prompt-injection defenses, PII masking and retry-safe server-side approvals. An LLM evaluation exposed a leaky 94% accuracy claim, and the fixes cut missed fraud/duplicate reviews from 7/13 to 0/13 at Rs. 0.09 per document, with a regression test for every fix. Built with Python, FastAPI, Gemini, React and TypeScript."
+              ghLink="https://github.com/Ritu84/ledgerline"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={PharmaScope}
               isBlog={false}
               title="PharmaScope AI"
-              description="An AI agent pipeline built with LangGraph that maps the competitive landscape for any drug target. It collects data from ClinicalTrials.gov, EUCTR and PubMed, uses GPT to extract structured drug data, normalizes it, and computes a phase-weighted crowding score that flags untapped opportunities. Includes token-aware batching for large datasets and a Streamlit UI."
+              description="An agentic AI pipeline built with LangGraph that maps the competitive landscape for any drug target from ClinicalTrials.gov, EUCTR and PubMed, with LLM-driven normalization and phase-weighted crowding scores. Adds RAG over 960 chunks (495 PubMed abstracts, 64 trials) with Gemini embeddings and Chroma: answers cite PMIDs and trial IDs, scoring 90% hit@5 with 0 hallucinated citations and 99% fewer tokens than sending every source."
               ghLink="https://github.com/Ritu84/PharmaScope-AI"
             />
           </Col>

@@ -19,6 +19,9 @@ import {
   SiRedis,
   SiFirebase,
   SiAmazonaws,
+  SiClickhouse,
+  SiApacheairflow,
+  SiPlaywright,
 } from "react-icons/si";
 
 
@@ -69,6 +72,15 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiClickhouse />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApacheairflow />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPlaywright />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />

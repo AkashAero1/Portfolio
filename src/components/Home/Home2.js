@@ -18,40 +18,44 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm a software engineer who builds products end to end, from
-              the interface people use to the data underneath it.
+              I'm an AI engineer who builds LLM products end to end, from the
+              agent that does the work to the interface people use.
               <br />
-              <br />I work mostly in
+              <br />
+              At Zocket I built
               <i>
-                <b className="purple"> TypeScript and Python</b>
+                <b className="purple"> multi-agent systems </b>
               </i>
-              , with
+              with LangGraph: a supervisor agent that delegates to specialist
+              sub-agents, which pull live ad data through
               <i>
-                <b className="purple"> React and Next.js</b>
+                <b className="purple"> MCP tools</b>
+              </i>
+              , plus prompt caching, human-in-the-loop approvals and
+              structured tool errors so agents recover on their own.
+              <br />
+              <br />
+              I care about making AI trustworthy:
+              <i>
+                <b className="purple"> RAG with citations</b>
+              </i>
+              ,
+              <i>
+                <b className="purple"> LLM evaluation</b>
               </i>{" "}
-              on the frontend and
+              and prompt-injection defenses, measured with real numbers.
+              <br />
+              <br />
+              I'm just as comfortable on the rest of the stack:
+              <i>
+                <b className="purple"> React, Next.js and TypeScript</b>
+              </i>{" "}
+              on the frontend,
               <i>
                 <b className="purple"> FastAPI and Node.js</b>
               </i>{" "}
-              on the backend.
-              <br />
-              <br />
-              I've built real-time analytics dashboards,
-              <i>
-                <b className="purple"> OAuth integrations</b>
-              </i>{" "}
-              and
-              <i>
-                <b className="purple"> ETL pipelines</b>
-              </i>{" "}
-              with PostgreSQL, ClickHouse and Airflow.
-              <br />
-              <br />
-              Lately I'm most excited about
-              <i>
-                <b className="purple"> AI agents and LLM-powered workflows</b>
-              </i>{" "}
-              built with LangGraph, LangChain and MCP.
+              on the backend, and PostgreSQL, Redis, ClickHouse and Airflow
+              for data.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
