@@ -2,87 +2,70 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
 } from "react-icons/di";
 import {
-  SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
+  SiPytorch,
+  SiTensorflow,
+  SiScikitlearn,
   SiFastapi,
-  SiExpress,
   SiPostgresql,
-  SiRedis,
-  SiFirebase,
-  SiAmazonaws,
-  SiClickhouse,
-  SiApacheairflow,
-  SiPlaywright,
+  SiSqlite,
+  SiDocker,
+  SiStreamlit,
+  SiPandas,
+  SiNumpy,
+  SiOpenai,
 } from "react-icons/si";
-
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="Python">
         <DiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="C++">
         <CgCPlusPlus />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <Col xs={4} md={2} className="tech-icons" title="PyTorch">
+        <SiPytorch />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <Col xs={4} md={2} className="tech-icons" title="TensorFlow">
+        <SiTensorflow />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
+      <Col xs={4} md={2} className="tech-icons" title="Scikit-learn">
+        <SiScikitlearn />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="FastAPI">
         <SiFastapi />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
         <SiPostgresql />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="SQLite">
+        <SiSqlite />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="MongoDB">
         <DiMongodb />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+      <Col xs={4} md={2} className="tech-icons" title="Docker">
+        <SiDocker />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <Col xs={4} md={2} className="tech-icons" title="Streamlit">
+        <SiStreamlit />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAmazonaws />
+      <Col xs={4} md={2} className="tech-icons" title="Pandas">
+        <SiPandas />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiClickhouse />
+      <Col xs={4} md={2} className="tech-icons" title="NumPy">
+        <SiNumpy />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiApacheairflow />
+      <Col xs={4} md={2} className="tech-icons" title="LLM APIs">
+        <SiOpenai />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPlaywright />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" title="Git">
         <DiGit />
       </Col>
     </Row>

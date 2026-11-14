@@ -1,43 +1,47 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
 
 const jobs = [
   {
-    company: "Zocket",
-    role: "SDE-1",
-    dates: "Sep 2025 – Oct 2026",
-    stack: "TypeScript, Python, FastAPI, LangGraph, MCP, React",
+    company: "Drishti: Intelligent CCTV Search System",
+    role: "AI Engineer",
+    dates: "May 2026 – July 2026",
+    stack: "Python, YOLO26, BoT-SORT, SigLIP 2, OSNet, FAISS, PostgreSQL",
+    demoLink: "https://drive.google.com/file/d/1JKpT5FpQCT2jOlJHH2TE9EKImZD84SpZ/view",
+    ghLink: "https://github.com/AkashAero1/Drishti",
     points: [
-      "Built multi-agent orchestration with LangGraph Deep Agents: a supervisor agent delegates to specialist sub-agents (Meta Ads, Google Ads, GA4, dashboards) that fetch live data through MCP tools.",
-      "Built the Paid Media Overview hub on ReAct AI agents with no-fabrication guardrails and cached fallbacks, turning AI insights across 3 ad platforms into tasks in one click.",
-      "Implemented prompt caching and structured tool-error handling for LangGraph sub-agents, enabling recovery from invalid tool arguments and reducing repeated prompt processing.",
-      "Built human-in-the-loop approval cards with a custom React tool-UI handler: the agent's tool call pauses on a LangGraph interrupt and resumes on approve/reject.",
-      "Extended the LangGraph run webhook to persist chat status to PostgreSQL, recovering chats from missed webhook events.",
-      "Engineered the React visualization layer of AI-powered Dashboard Studio (10+ chart types, version history), adopted by 5 organizations (~100 dashboards), reducing dashboard creation from weeks to hours.",
-      "Secured Google OAuth 2.0 connectors against cross-user account takeover; built a CRM-to-ClickHouse connector in nightly Airflow ETL, ingesting 671 deals (vs. 50).",
-      "Wrote 150+ tests (Vitest, Playwright E2E, pytest); used AI coding agents (Cursor, Claude Code) daily.",
+      "Designed an AI-powered CCTV intelligence system enabling natural-language search across surveillance footage, reducing reliance on time-consuming manual video investigations.",
+      "Integrated YOLO26 and BoT-SORT for object detection and multi-object tracking, transforming video frames into searchable object tracklets.",
+      "Developed a multimodal retrieval architecture using SigLIP 2 for text-image semantic search, OSNet for appearance-based person re-identification, and FAISS for similarity-based retrieval.",
+      "Architected a PostgreSQL-backed metadata layer connecting visual search results with camera, location, and investigation records.",
     ],
   },
   {
-    company: "Ikyam Solutions",
-    role: "Software Developer Intern",
-    dates: "Jan 2025 – Aug 2025",
-    stack: "React, FastAPI, MongoDB, Redis, AWS",
+    company: "Structural ML Research · SVNIT Surat",
+    role: "Machine Learning Researcher",
+    dates: "2024 – Present",
+    stack: "Python, Scikit-learn, XGBoost, MLPRegressor, FEA, Pandas, NumPy",
+    ghLink: "https://github.com/AkashAero1",
     points: [
-      "Engineered full-stack modules for an algorithmic trading platform: backtesting analytics, capital deployment dashboards and portfolio tracking.",
-      "Optimized Redis-backed FastAPI APIs for financial time-series data, reducing response latency from 1.5s to 70ms.",
-      "Built automated OHLC validation pipelines reconciling historical and live market data from Zerodha Kite and Redis, with email discrepancy reports.",
+      "Developed MLPRegressor and XGBoost machine learning models to predict elastic buckling loads of cellular steel beams using FEA-generated datasets, achieving an R² score of 99.8%.",
+      "Automated feature extraction and data preparation from complex finite element simulations, enabling rapid structural performance assessment.",
+      "Conducted comparative benchmarking across deep neural regression and gradient-boosted ensembles to ensure optimal generalization on structural load variations.",
     ],
   },
   {
-    company: "Finaccru",
-    role: "Software Developer Intern",
-    dates: "Jun 2024 – Nov 2024",
-    stack: "React, Redux Toolkit, Firebase",
+    company: "Open Source & Competitions",
+    role: "Contributor & Hackathon Winner",
+    dates: "2024 – Present",
+    stack: "LangGraph, FastMCP, Python, C++, Docker, Git",
+    ghLink: "https://github.com/AkashAero1",
     points: [
-      "Engineered a secure document management platform for a B2B fintech application, supporting 200+ file uploads, storage and retrieval.",
-      "Implemented cross-subdomain SSO using Firebase custom authentication tokens across 3 applications.",
+      "Secured 2nd Place in the prestigious e-Rakshak Hackathon conducted by Surat City Police for building innovative security and surveillance intelligence tools.",
+      "Contributor at Google Winter of Code (GWOC), collaborating on open-source software projects and developer ecosystems.",
+      "Active competitive programmer on Codeforces (handle: Avgeek), practicing advanced algorithms and data structures.",
     ],
   },
 ];
@@ -62,6 +66,31 @@ function Experience() {
                   </li>
                 ))}
               </ul>
+              {(job.ghLink || job.demoLink) && (
+                <div style={{ marginTop: "14px" }}>
+                  {job.demoLink && (
+                    <Button
+                      variant="primary"
+                      href={job.demoLink}
+                      target="_blank"
+                      size="sm"
+                      style={{ marginRight: "10px" }}
+                    >
+                      <CgWebsite /> &nbsp;Demo
+                    </Button>
+                  )}
+                  {job.ghLink && (
+                    <Button
+                      variant="primary"
+                      href={job.ghLink}
+                      target="_blank"
+                      size="sm"
+                    >
+                      <BsGithub /> &nbsp;GitHub
+                    </Button>
+                  )}
+                </div>
+              )}
             </Card.Body>
           </Card>
         </Col>

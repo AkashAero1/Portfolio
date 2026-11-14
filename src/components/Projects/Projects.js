@@ -3,12 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import LedgerLine from "../../Assets/Projects/LedgerLine.png"
-import PharmaScope from "../../Assets/Projects/PharmaScope.png"
-import Blog from "../../Assets/Projects/Blog.png"
-import Appoint from "../../Assets/Projects/Appoint.png"
-import FinTrack from "../../Assets/Projects/FinTrack.png"
-
+import Drishti from "../../Assets/Projects/Drishti.png";
+import InvoiceIQ from "../../Assets/Projects/InvoiceIQ.png";
+import AgentNexus from "../../Assets/Projects/AgentNexus.png";
+import EvalForge from "../../Assets/Projects/EvalForge.png";
+import SteelBeamML from "../../Assets/Projects/SteelBeamML.png";
 
 function Projects() {
   return (
@@ -19,59 +18,57 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          AI systems and full-stack products I've built recently.
+          AI systems, multimodal search, agentic platforms, and machine learning research I've built.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={LedgerLine}
+              imgPath={Drishti}
               isBlog={false}
-              title="LedgerLine"
-              description="An LLM invoice processing pipeline made safe to pay from: the model extracts fields, deterministic code makes every decision. Adds prompt-injection defenses, PII masking and retry-safe server-side approvals. An LLM evaluation exposed a leaky 94% accuracy claim, and the fixes cut missed fraud/duplicate reviews from 7/13 to 0/13 at Rs. 0.09 per document, with a regression test for every fix. Built with Python, FastAPI, Gemini, React and TypeScript."
-              ghLink="https://github.com/Ritu84/ledgerline"
+              title="Drishti : Intelligent CCTV Search System"
+              description="An AI-powered CCTV intelligence system enabling natural-language search across surveillance footage, transforming raw video into searchable tracklets. Integrates YOLO26 & BoT-SORT for object tracking, SigLIP 2 for multimodal text-image semantic retrieval, OSNet for appearance-based person re-identification, FAISS for high-speed similarity search, and a PostgreSQL metadata layer connecting visual results with camera, location, and investigation logs."
+              ghLink="https://github.com/AkashAero1/Drishti"
+              demoLink="https://drive.google.com/file/d/1JKpT5FpQCT2jOlJHH2TE9EKImZD84SpZ/view"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={PharmaScope}
+              imgPath={InvoiceIQ}
               isBlog={false}
-              title="PharmaScope AI"
-              description="An agentic AI pipeline built with LangGraph that maps the competitive landscape for any drug target from ClinicalTrials.gov, EUCTR and PubMed, with LLM-driven normalization and phase-weighted crowding scores. Adds RAG over 960 chunks (495 PubMed abstracts, 64 trials) with Gemini embeddings and Chroma: answers cite PMIDs and trial IDs, scoring 90% hit@5 with 0 hallucinated citations and 99% fewer tokens than sending every source."
-              ghLink="https://github.com/Ritu84/PharmaScope-AI"
+              title="InvoiceIQ : Invoice Processing & Approval Automation"
+              description="A secure LLM-powered financial document processing pipeline with prompt-injection defenses, PII masking, and retry-safe approval workflows. Evaluated across 100 invoices and 800 field values targeting 90% field-level accuracy. Engineered a deterministic policy engine flagging duplicate invoices, missing POs, and payment-limit violations with human-in-the-loop exception routing and complete audit trails."
+              ghLink="https://github.com/AkashAero1/InvoiceIQ"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Blog}
+              imgPath={AgentNexus}
               isBlog={false}
-              title="CampusChronicle"
-              description="A full-stack blogging platform with a block-based rich text editor, drafts, tags, search, a trending feed, nested comments and notifications. Supports JWT authentication with bcrypt-hashed passwords, Google sign-in via Firebase, and direct-to-S3 image uploads using pre-signed URLs."
-              ghLink="https://github.com/Ritu84/CampusChronicle"
-              demoLink="https://gecr-blogs.netlify.app"
+              title="Agent Nexus : Agentic AI Platform with MCP & RAG"
+              description="A multi-agent platform orchestrated via LangGraph integrating multiple Model Context Protocol (MCP) servers for tool discovery, multi-step execution, and document-grounded question answering. Features hybrid RAG with BM25 + dense vector embeddings, cross-encoder reranking, source citations, permission-controlled tool execution, human-in-the-loop approvals, persistent agent state, and execution tracing."
+              ghLink="https://github.com/AkashAero1"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Appoint}
+              imgPath={EvalForge}
               isBlog={false}
-              title="Appoint-Me"
-              description="A full-stack doctor appointment platform with separate patient, doctor and admin roles. Patients book appointments after an availability check, doctors manage their profiles and approve requests, and admins approve doctor applications. Built with React, Node.js, Express and MongoDB, secured with JWT."
-              ghLink="https://github.com/Ritu84/Appoint-Me"
-              demoLink="https://doctorapp-xk2x.onrender.com/"
+              title="EvalForge : LLM Evaluation & Regression Testing"
+              description="An automated LLM evaluation framework scoring model outputs on faithfulness, relevance, correctness, and hallucination across 100 test cases using RAGAS metrics orchestrated via LangGraph. Implements synthetic test-data generation pipelines for systematic stress testing and integrates LangSmith for granular tracing, prompt versioning, and side-by-side benchmarking."
+              ghLink="https://github.com/AkashAero1"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={FinTrack}
+              imgPath={SteelBeamML}
               isBlog={false}
-              title="FinTrack"
-              description="A finance analytics dashboard that turns KPIs, products and transactions into area, line, bar, pie and scatter charts plus sortable data grids, with a revenue forecast built on linear regression. Written in TypeScript with React, Redux Toolkit (RTK Query) and MUI, backed by a Node.js and MongoDB API."
-              ghLink="https://github.com/Ritu84/FinTrack"
-              demoLink="https://fintrack-finance.netlify.app/"
+              title="Cellular Steel Beam Buckling Load Prediction"
+              description="Applied Machine Learning research developing MLPRegressor neural network and XGBoost models to predict elastic buckling loads of cellular steel beams using FEA-generated datasets, achieving an exceptional R² score of 99.8%. Replaces hours of computationally intensive finite element simulations with instantaneous, accurate structural performance predictions."
+              ghLink="https://github.com/AkashAero1"
             />
           </Col>
         </Row>

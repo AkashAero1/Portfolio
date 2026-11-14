@@ -8,45 +8,44 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ritu Sharma </span>
-            from <span className="purple"> Bengaluru, India</span>.
+            Hi Everyone, I am <span className="purple">Akash Sharma </span>
+            from <span className="purple">Surat, Gujarat, India</span>.
             <br />
-            I'm an AI engineer and full-stack developer. I was an SDE-1 at
-            Zocket, where I built multi-agent LLM systems, MCP integrations
-            and React dashboards for an AI marketing analytics platform,
-            after internships at Ikyam Solutions and Finaccru. I hold a
-            B.E. in Computer Engineering from GEC Rajkot.
+            I am an AI Engineer pursuing my <b>B.Tech at Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</b> (2024 – 2028) with a <b>CGPA of 8.1</b>.
             <br />
             <br />
-            I love problem-solving: I'm a{" "}
-            <a href="https://leetcode.com/u/Ritu84/" target="_blank" rel="noreferrer">
-              LeetCode Knight
-            </a>{" "}
-            (top 4%) with 800+ problems solved, 3-star on{" "}
-            <a href="https://www.codechef.com/users/sharma_ritu" target="_blank" rel="noreferrer">
-              CodeChef
-            </a>
-            , and I led my college's Google Developer Student Club in 2023.
+            I specialize in multimodal AI, computer vision, agentic workflows, and production LLM systems.
+            As an AI Engineer, I built <b>Drishti</b>, an intelligent CCTV search system enabling natural-language
+            video search across surveillance feeds using YOLO26, BoT-SORT, SigLIP 2, OSNet, and FAISS.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            My engineering work spans autonomous agent platforms using <b>LangGraph and MCP</b> (Agent Nexus),
+            automated evaluation frameworks using <b>RAGAS and LangSmith</b> (EvalForge), and secure LLM financial
+            automation pipelines (InvoiceIQ). I have also published ML research predicting structural buckling loads
+            with <b>99.8% R² accuracy</b> using XGBoost and MLPRegressor.
+            <br />
+            <br />
+            Key Achievements & Community:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Badminton
+              <ImPointRight /> 🥈 <b>2nd Place</b> in the <b>e-Rakshak Hackathon</b> conducted by Surat City Police
             </li>
             <li className="about-activity">
-              <ImPointRight /> Yoga
+              <ImPointRight /> 🌐 Open-Source Contributor at <b>Google Winter of Code (GWOC)</b>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Drawing
+              <ImPointRight /> ⚡ Competitive Programmer on{" "}
+              <a href="https://codeforces.com/profile/Avgeek" target="_blank" rel="noreferrer" className="purple">
+                Codeforces (Avgeek)
+              </a>
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(155 126 172)", marginTop: "20px" }}>
+            "Strive to engineer reliable, scalable, and auditable AI systems that make an impact!"
           </p>
-          <footer className="blockquote-footer">Ritu Sharma</footer>
+          <footer className="blockquote-footer">Akash Sharma</footer>
         </blockquote>
       </Card.Body>
     </Card>

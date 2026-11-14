@@ -1,12 +1,16 @@
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Girl_Coding from "../../Assets/Girl_Coding.webp"
+import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  AiOutlineMail,
 } from "react-icons/ai";
+
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
 
 function Home2() {
   return (
@@ -15,90 +19,137 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="purple">INTRODUCE</span> MYSELF
             </h1>
+
             <p className="home-about-body">
-              I'm an AI engineer who builds LLM products end to end, from the
-              agent that does the work to the interface people use.
+              I'm an AI Engineer passionate about building intelligent
+              systems that go beyond experimentation and solve real-world
+              problems.
+
               <br />
               <br />
-              At Zocket I built
+
+              My work focuses on
               <i>
-                <b className="purple"> multi-agent systems </b>
+                <b className="purple">
+                  {" "}Generative AI, Agentic Systems, and LLM Engineering
+                </b>
               </i>
-              with LangGraph: a supervisor agent that delegates to specialist
-              sub-agents, which pull live ad data through
+              {" "}— from designing autonomous agents and MCP-based tool
+              integrations to building RAG pipelines and reliable
+              LLM-powered applications.
+
+              <br />
+              <br />
+
+              I'm particularly interested in making AI systems more
+              dependable through
               <i>
-                <b className="purple"> MCP tools</b>
+                <b className="purple">
+                  {" "}guardrails, evaluation, observability, and
+                  human-in-the-loop workflows.
+                </b>
               </i>
-              , plus prompt caching, human-in-the-loop approvals and
-              structured tool errors so agents recover on their own.
+
               <br />
               <br />
-              I care about making AI trustworthy:
+
+              Beyond LLMs, I've also explored
               <i>
-                <b className="purple"> RAG with citations</b>
+                <b className="purple">
+                  {" "}Computer Vision and Applied Machine Learning
+                </b>
               </i>
-              ,
-              <i>
-                <b className="purple"> LLM evaluation</b>
-              </i>{" "}
-              and prompt-injection defenses, measured with real numbers.
+              , building systems for multimodal retrieval, object tracking,
+              and predictive modelling.
+
               <br />
               <br />
-              I'm just as comfortable on the rest of the stack:
+
+              I believe great AI engineering isn't just about choosing
+              the right model; it's about engineering the entire system
+              around it — making it useful, reliable, and scalable.
+
+              <br />
+              <br />
+
+              Currently pursuing my B.Tech at
               <i>
-                <b className="purple"> React, Next.js and TypeScript</b>
-              </i>{" "}
-              on the frontend,
-              <i>
-                <b className="purple"> FastAPI and Node.js</b>
-              </i>{" "}
-              on the backend, and PostgreSQL, Redis, ClickHouse and Airflow
-              for data.
+                <b className="purple"> NIT Surat</b>
+              </i>
+              , I'm constantly learning, experimenting, and building
+              towards what's next.
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={Girl_Coding} className="img-fluid w-100px" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="Akash's avatar"
+              />
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
+
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Ritu84"
+                  href="https://github.com/AkashAero1"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="GitHub"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/SharmaRitu69"
+                  href="https://www.linkedin.com/in/akash-sharma-305524304/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/ritu-sharma-a2580222a/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="LinkedIn"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://codeforces.com/profile/Avgeek"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="Codeforces"
+                  aria-label="Codeforces"
+                >
+                  <SiCodeforces />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="mailto:akashsharma09501@gmail.com"
+                  className="icon-colour home-social-icons"
+                  title="Email"
+                  aria-label="Email"
+                >
+                  <AiOutlineMail />
                 </a>
               </li>
             </ul>
@@ -108,4 +159,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

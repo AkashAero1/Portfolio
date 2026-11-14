@@ -7,9 +7,10 @@ function Type() {
       options={{
         strings: [
           "AI Engineer",
-          "Multi-Agent Systems & MCP",
+          "Agentic AI & MCP Systems",
+          "Multimodal Video Intelligence",
           "RAG & LLM Evaluation",
-          "Full-Stack Developer",
+          "Machine Learning Researcher",
         ],
         autoStart: true,
         loop: true,

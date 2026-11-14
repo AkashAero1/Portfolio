@@ -1,51 +1,49 @@
 <h2 align="center">
-  Portfolio Website - v1.0<br/>
-  <a href="https://ritu-sharma-portfolio.netlify.app/" target="_blank">Ritu.tech</a>
+  Akash Sharma - Personal Portfolio Website<br/>
+  <a href="https://github.com/AkashAero1" target="_blank">GitHub Profile</a>
 </h2>
 <br/>
 
-## Built With 💖
+## Overview
 
-My personal portfolio <a href="https://ritu-sharma-portfolio.netlify.app/" target="_blank">Ritu.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+Personal developer portfolio of **Akash Sharma**, showcasing projects in:
+- Multimodal Computer Vision & Video Intelligence (Drishti)
+- Agentic AI & Model Context Protocol (MCP) Systems (Agent Nexus)
+- Enterprise LLM Extraction, Guardrails & Policy Automation (InvoiceIQ)
+- Automated LLM Evaluation & Regression Benchmarking (EvalForge)
+- Applied Machine Learning & Finite Element Analysis (Buckling Load Prediction)
 
-This project was built using these technologies.
+## Built With 💻
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
-
-## Features
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
-
-**📱 Fully Responsive**
+- **React.js** (v17)
+- **React-Bootstrap** & CSS3
+- **Typewriter-Effect**
+- **React-PDF**
+- **React-Icons**
+- **React-Parallax-Tilt**
 
 ## Getting Started
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+### Installation & Setup
 
-## 🛠 Installation and Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AkashAero1/portfolio.git
+   cd portfolio/Portfolio
+   ```
 
-1. Installation: `npm install`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. In the project directory, you can run: `npm start`
+3. Run locally:
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the site in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-
+4. Build for production:
+   ```bash
+   npm run build
+   ```
